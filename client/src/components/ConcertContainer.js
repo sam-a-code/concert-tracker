@@ -9,7 +9,7 @@ const ConcertContainer = ({
   setConcerts,
   displayedVenues,
   setVenues,
-  handleNewStub
+  handleNewStub,
 }) => {
   const filteredBands = bands.filter((band) => {
     return (
@@ -21,6 +21,7 @@ const ConcertContainer = ({
       user.genre_3 === band.secondary_genre
     );
   });
+
   const displayed = filteredBands.map((band) => {
     return concerts.map((concert) => {
       return (
